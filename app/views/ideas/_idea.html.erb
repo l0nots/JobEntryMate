@@ -1,0 +1,27 @@
+<div id="<%= dom_id idea %>">
+  <p>
+    <strong>Name:</strong>
+    <%= idea.name %>
+  </p>
+
+  <p>
+    <strong>School:</strong>
+    <%= idea.school %>
+  </p>
+
+  <p>
+    <strong>Picture:</strong>
+    <%= image_tag(idea.picture_url , width:"600px") if idea.picture.present? %>
+  </p>
+
+  <p>
+    <strong>Pr:</strong>
+    <%= idea.pr %>
+  </p>
+
+  <p>
+    <strong>Reason:</strong>
+    <%= idea.reason %>
+  </p>
+
+</div>
