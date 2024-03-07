@@ -1,6 +1,16 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Ideas</h1>
+<body>
+<header>
+  <h1>JpbEntryMate</h1>
+  <ul>
+    <a href="introduction.html"><li>編集する</li></a>
+    <a href="study.html"><li>削除する</li></a>
+    <a href="dream.html"><li>ログアウト</li></a>
+  </ul>
+</header>
+
+<main>
 
 <div id="ideas">
   <% @ideas.each do |idea| %>
@@ -11,4 +21,8 @@
   <% end %>
 </div>
 
+</main>
+
 <%= link_to "New idea", new_idea_path %>
+
+</body>

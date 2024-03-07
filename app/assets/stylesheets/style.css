@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(206, 206, 206);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(176, 173, 173, 0.382);
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+}
+
+header ul li{
+    color:black;
+    list-style: none;
+    margin-right: 30px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+
+.element img{
+    width:170px;
+    height:200px;
+}
+
+#basic_info{
+    display: flex;
+}
+
+#ns{
+    padding-top: 40px;
+}

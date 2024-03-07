@@ -1,26 +1,31 @@
 <div id="<%= dom_id idea %>">
-  <p>
-    <strong>Name:</strong>
+
+  <div id = "basic_info">
+  <div id = "ns">
+  <p class = "element">
+    <strong>氏名<br></strong>
     <%= idea.name %>
   </p>
 
-  <p>
-    <strong>School:</strong>
+  <p class = "element">
+    <strong>学校<br></strong>
     <%= idea.school %>
   </p>
+  </div>
 
-  <p>
-    <strong>Picture:</strong>
+  <p class = "element">
     <%= image_tag(idea.picture_url , width:"600px") if idea.picture.present? %>
   </p>
 
-  <p>
-    <strong>Pr:</strong>
+  </div>
+
+  <p class = "element">
+    <strong>自己PR:</strong>
     <%= idea.pr %>
   </p>
 
-  <p>
-    <strong>Reason:</strong>
+  <p class = "element">
+    <strong>志望理由:</strong>
     <%= idea.reason %>
   </p>
 
