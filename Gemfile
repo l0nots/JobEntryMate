@@ -72,3 +72,4 @@ group :test do
 end
 
 gem "carrierwave" , "~> 2.2.3"
+gem "devise", "~> 4.8.1"
