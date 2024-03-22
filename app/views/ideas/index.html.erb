@@ -4,7 +4,7 @@
 <header>
   <h1>JpbEntryMate</h1>
   <ul>
-    <a href="introduction.html"><li>編集する</li></a>
+    <a href="introduction.html"><li><%= link_to "編集する", new_idea_path %></li></a>
     <a href="study.html"><li>削除する</li></a>
     <a href="dream.html"><li>ログアウト</li></a>
   </ul>
@@ -15,14 +15,12 @@
 <div id="ideas">
   <% @ideas.each do |idea| %>
     <%= render idea %>
-    <p>
-      <%= link_to "Show this idea", idea %>
-    </p>
+
   <% end %>
 </div>
 
 </main>
 
-<%= link_to "New idea", new_idea_path %>
+
 
 </body>
